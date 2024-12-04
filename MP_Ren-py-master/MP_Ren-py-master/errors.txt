@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 125: expected 'simple_expression' not found.
+    show mc at 
+               ^
+
+Ren'Py Version: Ren'Py 8.3.2.24090902
+Thu Nov 28 13:08:22 2024
