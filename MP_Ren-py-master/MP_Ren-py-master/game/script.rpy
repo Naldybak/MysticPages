@@ -127,11 +127,11 @@ label found:
     show arden at center2
     with dissolve
     a "He’s probably just sitting somewhere, watching bugs. You know how he is."
-    mc "Yeah, but he shouldn't just vanish without saying something."
+    mc “I know, but he should know better”
     "Then, just as I was losing hope, a figure appeared in the distance, slumped against a tree. Relief hit me like a wave, but it quickly gave way to frustration."
-    s @ happy "There he is!"
+    a @ happy "There he is!"
     mc "Orin! What in the world were you thinking?"
-    a "Do you have any idea how worried we were? You’re lucky we didn’t just keep going without you."
+    s "Do you have any idea how worried we were? You’re lucky we didn’t just keep going without you."
     show arden at right3
     show orin at center2
     o "Sorry… I didn’t mean to scare you. I got… distracted."
@@ -184,7 +184,7 @@ label found:
         "As we started walking again, I couldn’t shake the feeling that the forest was watching us. And the words from the book echoed in my mind: ‘The forest keeps what it desires.’"
         jump arrive
     else :
-        s "We’ve already come this far. If we turn back now, we’ll just be wasting time."
+        a "We’ve already come this far. If we turn back now, we’ll just be wasting time."
         mc "Better wasting time than ending up lost out here, or worse."
         o "I’m with [mc] on this one."
         a "You can’t be serious."
@@ -260,9 +260,139 @@ label arrive:
     s "Good, Orin and I will gather the firewoods then"
     return
 
-label chp3:
+label chp3: Deciding
+    “Sunlight filtered through the canopy, casting uneven patches of golden light across the forest floor. The shadows, stretched long by the fading light, seemed to shift unnaturally, their edges rippling as if stirred by some unseen hand.“
+    “The air carried a mix of warmth and the faint coolness found in shaded corners, a quiet reminder of the forest's expanse. After what felt like hours of hiking, we finally stopped at a secluded clearing, nestled deep within the heart of the woods.”
+    mc "Is this the place?" 
+    a "Yeah, we’re here!" 
+    "I paused, my eyes scanning the clearing. The afternoon sun bathed the campsite in a warm glow, but the air felt heavier, too still—as if we had stumbled into a photograph meant to remain undisturbed."
+    "For a moment, I wanted to believe this was the retreat we had imagined—a quiet, untouched sanctuary far from everything. But the unease lingered, a cold thread winding through my chest, like something in the forest didn’t want us here."
+    mc "It’s beautiful, but…"
+    a "[mc] just wait until the sunset—it’s going to be more amazing."
+    s "Honestly, after all the setbacks, I wasn’t sure we’d make it here. But I’m glad we did."
+    a "Exactly! And don’t forget about the fun stuff we’ve planned for tomorrow. It’ll be worth all the trouble."
+    "I envied their optimism, but something about the shadows felt unnaturally long, as if they were hiding something just out of sight—something I couldn’t explain, but felt deep in my bones.”
+    mc "I hope you’re right."
+    s "Don't worry, it's going to be worth it. Now let’s get these tents set up, so we can kick back and enjoy the evening!"
+    o "Guys, we’ll need firewood for later, right? Mind if I go gather some? I’d also like to explore a bit."
+    mc “We do need it, but after the warning, I don’t think it’s a good idea for you to wander off alone.”
+    o "I think I can handle myself fine."
+    a "No, warning aside, I agree with [mc]. Someone needs to keep an eye on you."
+    o "I’m not a child that needs to be watched. I just want to grab a few logs and maybe go sightseeing a bit more before it gets too dark."
+    mc "Oh sure, because 'sightseeing' worked out so well for us last time. What could possibly go wrong?"
+    s “After what happened last time, it’s better if someone goes with you—just to make sure you don’t wander off again. Plus, an extra hand could come in handy.”
+    "I glanced at Orin, who was clearly annoyed, but his eyes kept darting toward the trees, as if the forest was calling him again.”
+    ”As much as I wanted to believe him, I wasn’t willing to risk another vanishing act."
+Bold: mc "Any volunteers? My legs are killing me, so I prefer to stay and help set up the tents.”
+    s "Then I’ll stick with Orin to make sure he doesn’t wander off again. You can help Arden with the tents."
+    mc "Perfect. Now we can be reassured that we will not do another 'Find Orin' situation before dinner."
+    o "Haha, very funny. Come on, Sophia. Let’s leave these two, and grab the firewood."
+    s “Got it. I'll keep an eye on him. Just focus on setting the tent”
+    mc “Okay”
+    "As Sophia and Orin disappeared into the trees, the clearing seemed quieter, the shadows stretching longer as the sun dipped lower.”
+    mc "Alright, let’s get this done."
+    a "Sure thing. Let me know if you need a break."
+    "I sighed, rolling my eyes, but followed Arden’s instructions as he began assembling the first tent.“
+    “For once, something seemed to be going according to plan—or at least, for now. But in the back of my mind, I couldn’t shake the thought that maybe we were settling into the calm before a storm.”
+    
+Bold: mc "I’m exhausted, but I’ll go with Orin. Someone has to make sure he doesn’t wander off again."
+    s "Are you sure? You can stay and help set up the tents if you want."
+    mc "Nah, it’s fine. I’ve got this."
+    s "Alright, then. I’ll help Arden with the tents, and you can make sure Orin doesn’t get any funny ideas."
+    o "Haha, very funny. Come on, let’s leave these two, and grab the firewood."
+    mc “Okay, leave this to me.”
+    "I matched his pace as we started walking toward the trees. Occasionally I glanced over my shoulder, the others growing smaller as we moved farther from camp.”
+    “My chest tightened, and despite my decision to stick with Orin, the unease gnawed at me, as if we were making the wrong choice by staying out here."
     return
 
 label wait:
 
+    return
+
+label Sleeping arrangements: 
+    “As we finished the last tent, the faint sound of footsteps and muffled chatter signaled Sophia and Orin’s return. Orin carried an armful of firewood, his grin wide despite the strain, while Sophia trailed behind, a small bundle of kindling in her arms”
+    mc “Welcome back”
+    s "We’re back! How’s it going?"
+    mc “We’re finished.”
+    a "Yeah, you have perfect timing. We just wrapped up here."
+    o “[mc], I hope your cautious streak carried over to setting up the tents. I’d rather not wake up buried under a pile of canvas and poles.”
+    mc “Orin—it’s not going to collapse. Arden made sure of that.”
+    "I watched as Orin set down the firewood he’d gathered, though his gaze kept flicking toward the tents, his expression skeptical—like he was expecting them to fold up any second."
+    mc “For the record, this might be my first time setting one up, but with Arden’s instructions and help, I’m confident they’ll hold.”
+    s “Wait a second. Why are there only three tents set up?”
+    mc “Yeah, about that…” #kasih kecil
+    a “One of the tents has a broken pole. It’s unusable.”
+    s “A broken pole? Didn’t you just buy these tents?”
+    mc “It’s brand new, but I must have been careless when I stored it. Maybe something hit it, or it got bent while moving stuff around.”
+    "I caught the flicker of disapproval on Sophia’s face, her lips pressing into a thin line as she held back whatever remark was on the tip of her tongue”
+    o “Wow, [mc] being careless? That’s a twist. First the book, now this. What’s next? Is the forest gonna whisper?”
+    s “Orin, this isn’t the time for jokes. With one tent down, we’ll need to figure out our sleeping arrangements.”
+    mc “The tents are big enough for three people each, so it won't be a problem.”
+    a “Yeah, and it’s just for one night. We’ll manage without any issues.”
+    s “Good. At least none of us will be sleeping under the stars. Now we need to figure out who’s sharing a tent”
+    mc “I’ll volunteer to share if it makes things easier—It’s my fault for being careless, so I’ll take one for the team and share.”
+    a “So, that just leaves us three to decide.”
+    o “I don’t mind sharing if you’re okay with the risk of getting kicked in the middle of the night.”
+    mc “In that case, I will sleep with Orin. I slept like a log and It’ll be simpler than drawing this out.”
+    a "Well, I don’t mind sharing either—in case you want to reconsider. Just pick whoever you’re most comfortable with"
+    “I knew the broken tent was my fault, but their easygoing acceptance reminded me of how much I could always count on them. Even now, they didn’t let it turn into a bigger issue. I couldn’t help but feel grateful for them.”
+    mc “Don’t tell me, are you gonna say the same thing, Sophia?”
+    s “Yeah, so who will you decide to sleep with?”
+    a “How about me?”
+    s “Nope, you get your own tent. It’s either with Orin, or with me?”
+Bold: mc “I will stay with you, Sophia”
+    a “What!? What’s wrong with sharing with me?”
+    o “Because you’ve got an even meaner kick than I do.”
+    mc “Sorry, arden. Orin’s right.”
+    a “I’m not”
+    s “Yes, you are.”
+    “A moment of silence hung in the air before we all burst into laughter, the tension dissolving in an instant.”
+    s “Perfect! It’s settled, then. Let’s go ahead and drop our stuff in the tents so we can finally relax.”
+    return
+
+label Book:
+    o “Finally, the moment I’ve been waiting for—let’s light this thing up!”
+    s “You seem more excited about dinner than anything else on this entire journey.”
+    o “Of course! Just think about all the delicious meals we can prepare!”
+    mc “You glutton, can you not think about food for a second?”
+    o “Nope, can't do. Arden, could you do the honor?”
+    a “Sure.”
+    “I watched as Arden struck a match, and soon the flames crackled to life, casting warm, flickering light across the clearing. As we sat around the fire, the comforting glow eased the tension from earlier, but my mind still lingered on the strange feeling I had about this place.”
+    o “Alright, behold! The marshmallows—just wait till I roast them.”
+    mc “Eating snacks before dinner? You’ll spoil your appetite. Don’t you want to eat something else first?”
+    s “Yeah, we have a few options for dinner.”
+    o “Really? What’s on the menu?”
+    a “Hotdogs, canned soups, instant noodles, and hotpot with ingredients of your choosing—just pick one!”
+    o “Hotpot!?”
+    mc “That sounds good… but wait, a hotpot with ingredients of our choosing? Are you serious? That sounds like a disaster waiting to happen!”
+    “I couldn’t believe they actually thought this was a good idea. Letting everyone pick their own ingredients? That was just asking for trouble. What if someone brought something weird? I could already picture a pot full of bizarre concoctions, especially with Orin and Arden, who loved to experiment.”
+    s “Yes! We asked you to bring ingredients of your choice, remember? Also Hotpot is a mix of ingredients so it shouldn’t be a problem”
+    mc “Huh!? I thought it was to bring whatever snack you like to share.”
+    a “No, it’s for hotpot. We already told you. It’s not our fault you didn’t listen, so you can’t protest.”
+    s “But you did bring something, right?”
+    mc “Yeah, I brought a few things. But honestly, I don’t think it’s a good idea to eat strange food right now.”
+    a “It’ll be fine, as long as you don’t add anything weird to the hotpot!”
+    mc “Says the one most likely to put something weird in there.”
+    o “But think about the thrill! With the added risk… wouldn’t it be more exciting?”
+    mc “Still, could we just save it for tomorrow? By then, we wouldn’t need to worry about weird food.”
+    s “Either way, I don’t have a problem with it. As Orin said, it’s more interesting that way.”
+    mc “I’m not sure about this…”
+    a “Then it’s settled—tonight is hotpot night!”
+    mc “Urgh… do whatever you want.”
+    s “Let me set it up.”
+    “After Sophia finished arranging the hotpot, we began taking turns tossing ingredients into the bubbling broth. The fire crackled, and a relaxed silence fell over us. But then, suddenly, Orin pulled something out of his pocket.”
+    o “Guys, check this out. I found it under a bush back there.”
+    s “Whoa, it looks ancient! When did you pick this up?”
+    mc “Orin, you shouldn’t pick up strange things to bring along. It could be dangerous!”
+    o “Yeah, but while you guys were busy arguing about whether we got lost, I spotted the book peeking out from under a bush. I was curious, so I grabbed it.”
+    a “Orin, check it. If there’s some scribble on it, we might be in for an adventure.”
+    o “Okay, let’s see… It’s mostly illegible… but wait, look here. ‘Turn back now. Do not enter these woods after dusk. Those who linger here are never seen again…’”
+    “I felt a shiver run down my spine. The words hung heavy in the air, and the tension I felt before came back stronger than ever. I wanted to laugh it off, but the darkness surrounding us made it hard to shake the feeling that we might have stumbled into something we didn’t understand.”
+    mc “Uhm, is… is that a warning of some kind?”
+    a “Probably just someone’s idea of a prank. It’s not like these warnings are uncommon in places like this. After all, if you aren’t careful, you could easily get lost.”
+    s “Yeah, maybe, but… it looks so old and beaten up. Why go to such lengths to scare people? There must be some truth to it.”
+    o “Come on, guys—don’t tell me you’re all so chicken you can’t handle a little warning from a dusty book!”
+    a “Yeah, let’s not let a spooky old book ruin our night. It’s probably nothing. Let’s just focus on the fun we’re having here.”
+    o “Exactly. It’s just a story. Nothing to worry about.”
+    “I wasn’t entirely convinced, but I decided to let it go for now. After all, nothing bad had happened yet, right? We were still sitting around the fire, enjoying the warmth and company. Still, as I glanced at the dark edges of the clearing, the shadows felt a little too close.”
     return
