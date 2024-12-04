@@ -306,7 +306,40 @@ Bold: mc "I’m exhausted, but I’ll go with Orin. Someone has to make sure he 
     return
 
 label wait:
-
+    “I shifted uneasily, my eyes darting back to the empty trail behind us. The forest felt oppressively still, broken only by the occasional snap of a twig or the faint rustle of leaves.”
+    mc “Where’s Orin? Shouldn’t he be here by now?”
+    s “Yeah, it’s been so long.”
+    a “Maybe he’s got carried away admiring the view. Or getting cozy with some bugs.”
+    mc “It’s not funny, Arden. He should’ve caught up by now. This doesn’t feel right
+    “The silence around us grew heavy, pressing in like an invisible weight. I tapped my foot anxiously, a gnawing pit of unease twisting in my stomach.”
+    ”The stillness of the forest was unnerving, like it was holding its breath. Every crackling branch and shifting leaf felt amplified, like they were waiting for something.”
+    mc “I think It’s time to search for him. He’s been gone too long. ”
+    s "That’s right. We can’t just stand here guessing. What if something happened to him? We need to split up and look."
+    a “Fine, but we’re not splitting up. I know you’re worried but we should stick together."
+    “Suddenly, a rustling sound broke through the thick silence, sharp and close. My heart stopped, and I stiffened, every muscle tense.”
+    mc “What was that?”
+    s “Is that… Orin?”
+    a “Let’s hope you’re right.”
+    “Then, from the shadows, a figure emerged, dragging their feet. It was Orin, his face pale and his eyes wide, as if he’d seen something he shouldn’t.”
+    mc “Orin! Where in the world have you been?”
+    s “Do you have any idea how worried we were? What were you doing out there?”
+    o “I—”
+    mc “What’s that?”
+    “I noticed something in his hand, an old, tattered book. The corners had frayed, barely clinging to the fragile pages inside.”
+    s “Where did you get the book?"
+    o "I get this on a tree. But hear me out, this book—it warns us not to stay in this forest.“
+    mc "Wait, are you saying this book is some kind of warning?"
+    a "You’re not seriously believing that, are you? It’s probably some campfire story meant to scare kids."
+    o "It doesn’t feel like that. I’ve been walking in circles. Then when I was about to give up suddenly I found my way here."
+    mc “Orin, that sounds like you were disoriented. Are you okay?"
+    o “I’m fine. But I think we should leave.”
+    a “And why should we leave?”
+    mc "Arden, whether he is telling the truth or not, I don’t think we should continue."
+    s “Yeah, Orin isn’t in a good condition to continue”
+    a “Why can’t we just rest a bit then continue. We’ve already come this far. If we turn back now, we’ll just be wasting time.”
+    mc “Arden, we can still go back another day, but if something happens to Orin, surely you will regret it.
+    s “Yeah, [mc] is right”
+    a “Fine, let’s continue another day.”
     return
 
 label Sleeping arrangements: 
